@@ -1,0 +1,36 @@
+* {
+				margin: 0;
+				padding: 0;
+			}
+			#minBox,#maxBox {
+				border: 4px solid #a5a5a5;
+				margin-left: 20px;
+				margin-top: 30px;
+			}
+			#minBox {
+				position: relative;
+				width: 500px;
+				height: 296px;
+			}
+			#slider {
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 150px;
+				height: 150px;
+				background-color: #A5A5A5;
+				opacity: 0.6;
+			}
+			#maxBox {
+				display: none;
+				position: absolute;
+				left: 510px;
+				top: 0;
+				width: 500px;
+				height: 500px;
+				overflow: hidden;
+			}
+			#maxBox img {
+				position: absolute;
+			}

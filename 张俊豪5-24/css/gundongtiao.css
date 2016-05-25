@@ -1,0 +1,37 @@
+* {
+				margin: 0;
+				padding: 0;
+			}
+			#wrap {
+				position: relative;
+				height: 400px;
+				width: 300px;
+				padding-right: 50px;
+				margin-top:100px;
+				background-color: #fff9e3;
+				opacity: 0.5;
+				/*background-color: hsla(250,100%,60%,0.5);*/
+				overflow: hidden;
+			}
+			#content {
+				position: relative;
+			}
+			#slideBar {
+				display: none;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 50px;
+				height: 100%;
+				background-color: #A5A5A5;
+				opacity: 0.6;
+				/*background-color: hsla(100,100%,50%,0.6);*/
+			}
+			#slider {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				background-color: #FFF;
+				opacity: 0.8;
+			}
