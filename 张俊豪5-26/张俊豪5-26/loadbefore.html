@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/loadbefore.css"/>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<div class="login">
+				<form action="javascript:void(0);">
+					<!--#camera隐藏,通过虚拟事件#cameraImg实现上传图片和调用照相机功能-->
+					<input type="file" name="camera" id="camera" value="" accept="img/*;capture=camera"/>
+				</form>
+				<div class="border">
+					<img src="img/circle.png" id="cameraImg"/>
+				</div>
+				<section >
+					<a href="../登录注册/index.html">登录</a>
+				
+				</section>
+			</div>
+			<div class="nav">
+				<section class="headTop clearfix">
+					<section>关注<span id="guanzhu"></span></section>
+					<section>粉丝<span id="fensi"></span></section>
+				</section>
+				<section class="headBottom clearfix">
+					<section>收藏<span id="guanzhu"></span></section>
+					<section>消息<span id="xiaoxi"></span></section>
+					<section>可用积分<span id="jifen"></span></section>
+				</section>
+			</div>
+		</header>
+		<div id="content">
+			<ul>
+				<li class="all_order">
+					<a class="all clearfix" href="javascript:void(0);">
+						全部订单 <section class="right_arrow"></section> 
+					</a>
+				</li>
+				<li class="order clearfix">
+					<section class="pay"><a href="javascript:void(0);">待付款</a></section>
+					<section class="express"><a href="javascript:void(0);">待发货</a></section>
+					<section class="collection"><a href="javascript:void(0);">待收货</a></section>
+					<section class="evaluate"><a href="javascript:void(0);">待评价</a></section>
+				</li>
+				<section id="mainContent">
+				<dl class="list1">
+					<dt>我的购物车</dt>
+					<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</dd>
+				</dl>
+				<dl class="list2">
+					<dt>我的会员</dt>
+					<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</dd>
+				</dl>
+				<dl class="list3">
+					<dt>客服热线</dt>
+					<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</dd>
+				</dl>
+				<dl class="list4">
+					<dt>我的上传</dt>
+					<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</dd>
+				</dl>
+				<dl class="list5">
+					<dt>我的设置</dt>
+					<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</dd>
+				</dl>
+			</section>
+			</ul>
+		</div>
+		<footer>
+			<ul class="clearfix">
+			<li class="icon icon1">
+				<a href="javascript:void(0);">主页</a>
+			</li>
+			<li class="icon icon2">
+				<a href="javascript:void(0);">商城</a>
+			</li>
+			<li class="icon icon3">
+				<a href="../xuancai/xuancai.html">选菜</a>
+				
+			</li>
+			<li class="icon icon4">
+				<a href="javascript:void(0);">发现</a>
+				
+			</li>
+			<li class="icon icon5">
+				<a href="javascript:void(0);" style="color: #6ab439;">我的</a>
+				
+			</li>
+		</ul>
+		</footer>
+	<script type="text/javascript" src="js/zepto.min.js">	</script>
+	<script type="text/javascript"> 
+	$('#cameraImg').click(function(){
+				$('#camera').trigger('click');
+			})</script>
+	</body>
+</html>

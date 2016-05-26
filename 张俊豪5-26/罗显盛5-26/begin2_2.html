@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/begin2.css"/>
+		<title>登陆后</title>
+		
+		
+	</head>
+	<body>
+		<header id="head">
+			<div class="camera">
+				<img src="img/camera.png"/>
+			</div>
+			<button>登陆</button>
+			<div class="head_text">
+				<div class="head_text_top">
+					<div class="head_text_top_1">
+						<span >关注</span>
+					</div>
+					<div class="head_text_top_2">
+						<span >粉丝</span>
+					</div>
+				</div>
+				
+				
+				<div class="head_text_buttom">
+					<div class="head_text_buttom_1">
+						<span >收藏</span>
+					</div>
+					<div class="head_text_buttom_2">
+						<span >消息</span>
+					</div>
+					<div class="head_text_buttom_3">
+						<span >可用基金</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+		<div id="xian"></div>
+		
+		
+		<section id="centent">
+			<div class="centent_1">
+				<span>全部订单</span>
+			</div>
+			
+			<div id="nav">
+				<img src="img/static_img_06.png"/>
+				<img src="img/static_img_08.png"/>
+				<img src="img/static_img_10.png"/>
+				<img src="img/static_img_03.png"/>
+				<span>代收款</span>
+				<span>代发货</span>
+				<span>待收货</span>
+				<span>待评价</span>
+			</div>
+			
+			
+		<div id="mainContent">	
+			<dl class="list1">
+				<dt>已审核订单是否取消</dt>
+				<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金
+      				卡进行支付，订单在未审核前，可自行取消订单。其他付
+     				款方式取消订单可直接致电1234-000-321。</dd>
+			</dl>
+			<dl class="list2">
+				<dt>已审核订单是否取消</dt>
+				<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金
+      				卡进行支付，订单在未审核前，可自行取消订单。其他付
+     				款方式取消订单可直接致电1234-000-321。</dd>
+			</dl>
+			<dl class="list3">
+				<dt>已审核订单是否取消</dt>
+				<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金
+      				卡进行支付，订单在未审核前，可自行取消订单。其他付
+     				款方式取消订单可直接致电1234-000-321。</dd>
+			</dl>
+			<dl class="list4">
+				<dt>已审核订单是否取消</dt>
+				<dd>答：订单提交后，您将无法自行取消您的订单。若您通过礼金
+      				卡进行支付，订单在未审核前，可自行取消订单。其他付
+     				款方式取消订单可直接致电1234-000-321。</dd>
+			</dl>
+		</div>
+		</section>
+		<footer id="bottomBar">
+		<ul class="clearfix">
+			<li class="icon icon1">
+				<a href="javascript:void(0);">主页</a>
+				
+			</li>
+			<li class="icon icon2">
+				<a href="javascript:void(0);">商城</a>
+				
+			</li>
+			<li class="icon icon3">
+				<a href="javascript:void(0);" style="color: #6ab439;">选菜</a>
+				
+			</li>
+			<li class="icon icon4">
+				<a href="javascript:void(0);">发现</a>
+				
+			</li>
+			<li class="icon icon5">
+				<a href="javascript:void(0);">我的</a>
+				
+			</li>
+		</ul>
+	</footer>
+		
+		
+		
+		
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="dist/idangerous.swiper.js"></script>	
+		<script type="text/javascript">
+			$(function(){
+				$("#mainContent dl").on("click",function(){
+					$(this).addClass("list-active").siblings().removeClass("list-active");
+					
+					//$(this).parent().toggleClass("list-active");
+				})
+			})
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

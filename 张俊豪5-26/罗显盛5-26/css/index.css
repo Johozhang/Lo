@@ -1,0 +1,31 @@
+body{
+	background-color: #ebeae4;
+}
+.menu-list {
+	width: 92%;
+	margin: 0 auto;
+}
+.menu-list li{
+	width: 48%;
+	float: left;
+	background-color: #fff;
+	padding: 8px;
+	box-sizing: border-box;
+	margin-bottom: 2%;
+}
+
+.menu-list li:nth-child(odd){
+	margin-right: 4%;
+}
+.menu-list li h2{
+	font-size: 1.4rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.price {
+	font-size: 1.6rem;
+	color: #ff0000;
+}
+
+

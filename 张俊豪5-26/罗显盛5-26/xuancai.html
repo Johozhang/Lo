@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>选菜</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="dist/idangerous.swiper.css">
+
+
+	<style type="text/css">
+		
+		body,html{
+			width: 100%;
+			height: 100%;
+		}
+		header{
+			height: 70px;
+			width: 100%;
+			/*margin-top: 6.66%;*/
+			background-color: #45382c;
+
+		}
+		.head_1{
+
+		}
+		.head_1 input{
+			width: 77.33%;
+			height: 32px;
+			margin-top: -93px;
+			margin-left: 4%;
+			background-color: #3f3228;
+			border-radius:8px;
+			box-shadow: 0px 1px 5px #2f251d inset;
+			border: 0;
+			background-image: url(img/3.0.2_10.png);
+			background-repeat: no-repeat;
+			background-size:22px;
+			background-position: 8px;	
+		}
+		#hear_img{
+			width: 24px;
+			height: 24px;
+			float: right;
+			margin-right:16px;
+			margin-top: -3px;
+		}
+		
+		
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   	 	color: #6c5e4a;  
+		}
+
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+    			color: #6c5e4a;
+		}
+
+		input:-ms-input-placeholder,
+		textarea:-ms-input-placeholder {
+    			color: #6c5e4a;
+		}
+
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+    			color: #6c5e4a;
+		}
+		
+		
+		
+		
+		
+		section{
+			width: 100%;
+			background-color: #ebeae4;
+		}
+		
+		#content_1{
+			background: #d3d3ce;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			/*height: 254px;*/
+		}
+		
+		#content_1 ul{
+			padding: 10px;
+			width: 1000%;
+			background-color: red;
+			float: left;
+			/*position: relative;*/
+			
+		}
+		
+		
+		
+		#content_1 ul li{
+			width:80px;
+			height: 140px;
+			margin:0 8px;
+			float: left;
+			/*position: absolute;*/
+
+		}
+		
+
+
+
+#centent_2 ul {
+	width:100%;
+	margin:0 auto;
+}
+#centent_2 ul li{
+	float: left;
+	width:27.33%;
+	margin:4% 0;
+}
+#centent_2 ul li:nth-child(3n-1) {
+	margin-left:6%;
+	margin-right: 6%;
+}
+
+#centent_2 ul li:nth-child(3n-2) {
+	margin-left:2.7%;
+	/*margin-right: 6%;*/
+}
+
+		
+		
+		#block{
+			border: 2px solid #dfded8;
+			border-radius:8px ;
+			overflow: hidden;
+			background-color: #fff;
+			box-shadow: 0 1px #b5b4b0;
+		}
+		#xian{
+			border-bottom:2px solid #ebebeb;
+			line-height: 26px;
+			text-align: center;
+			color: darkgrey;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		#bottomBar {
+			height: 46px;
+		}
+		#bottomBar ul{
+			position: fixed;
+			bottom:0;
+			left:0;
+			padding-top: 5px;
+			height: 52px;
+			box-sizing:border-box;
+			width:100%;
+			background-color: #48382b;
+		}
+		#bottomBar li {
+			float: left;
+			width:20%;
+		}
+		#bottomBar li a {
+			display: block;
+			width:34px;
+			margin:0 auto;
+			text-align: center;
+			color: #c3ad88;
+		}
+		#bottomBar li a:before {
+			content: "";
+			display: block;
+			width:28px;
+			margin:0 auto;
+			height: 24px;
+			background:url("img/icon_bar.png") no-repeat 0 0;
+			background-size: 320px 40px;
+		}
+		#bottomBar .icon.active a{
+			color:#6ab439;
+		}
+		#bottomBar .icon1 a:before {
+			background-position: 4px 4px;
+		}
+		#bottomBar .icon2 a:before {
+			background-position: -71px 4px;
+		}
+
+		#bottomBar .icon3 a:before {
+			background-position: -146px -20px;	
+		}
+		#bottomBar .icon4 a:before {
+			background-position: -222px 4px;
+		}
+		#bottomBar .icon5 a:before {
+			background-position: -296px 4px;
+		}
+		
+		
+		
+		#menu1{
+			
+			width: 130px;
+			height: 150px;
+			position: absolute;
+			top: 70px;
+			right: 0px;
+			background-color: #e6e5dc;
+			font-size: 1.6rem;
+			color: grey;
+			text-align: center;
+			display: none;
+			
+		}
+		#menu1 span{
+			margin-top: 50px;
+		}
+				
+		#botton{
+			background-color: #68ac3e;
+			color: #fff;
+			width: 70px;
+			height: 30px;
+			text-align: center;
+			border-radius: 10px;
+			border: 0;
+			font-size: 1.6rem;
+			margin-top: 10px;
+			
+		}
+		
+		
+
+	</style>
+
+
+</head>
+<body>
+	<header>
+	<br>
+	<br>
+	
+		<div class="head_1">
+			<form>
+				<input type="text" placeholder="　　　输入菜品名称" ></input>
+				<img src="img/3.0.2_07.png" id="hear_img"/>
+			</form>
+		</div>
+	</header>
+
+
+	<section>
+		
+		
+		<!--//这个是可以左右移动的屏幕-->
+		<div id="content_1">
+			<ul id="block_zon">
+				<li>
+					<a href="">
+						<div id="block">
+							<div id="xian">
+								<span id="span">你爱我吗?</span>
+							</div>
+						
+							<img src="img/3.0_05.png" alt="">
+							<br />
+						</div>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="">
+						<div id="block">
+							<div id="xian">
+								<span id="span">你爱我吗?</span>
+							</div>
+						
+							<img src="img/3.0_05.png" alt="">
+							<br />
+						</div>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="">
+						<div id="block">
+							<div id="xian">
+								<span id="span">你爱我吗?</span>
+							</div>
+						
+							<img src="img/3.0_05.png" alt="">
+							<br />
+						</div>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="">
+						<div id="block">
+							<div id="xian">
+								<span id="span">你爱我吗?</span>
+							</div>
+						
+							<img src="img/3.0_05.png" alt="">
+							<br />
+						</div>
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="">
+						<div id="block">
+							<div id="xian">
+								<span id="span">你爱我吗?</span>
+							</div>
+						
+							<img src="img/3.0_05.png" alt="">
+							<br />
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+		
+		<div id="menu1">
+			<br /><br />
+			<span id="">
+				32种可选菜品
+			</span>
+			<br />
+			<button id="botton">
+				查看
+			</button>
+		</div>
+		
+
+
+
+		<!--//这个是中下的居中图片-->
+		<div id="centent_2">
+			<ul class="clearfix">
+			<!-- li*12>a>img[src="img/icon_$$.png"] -->
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">爱过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">错过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">错过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div id="block">
+						<div id="xian">
+							<span id="span">错过</span>
+						</div>
+						
+						<img src="img/3.0_05.png" alt="">
+							<br />
+					</div>
+				</a>
+			</li>
+		</ul>
+		</div>
+	</section>
+
+
+	<footer id="bottomBar">
+		<ul class="clearfix">
+			<li class="icon icon1">
+				<a href="javascript:void(0);">主页</a>
+				
+			</li>
+			<li class="icon icon2">
+				<a href="javascript:void(0);">商城</a>
+				
+			</li>
+			<li class="icon icon3">
+				<a href="javascript:void(0);" style="color: #6ab439;">选菜</a>
+				
+			</li>
+			<li class="icon icon4">
+				<a href="javascript:void(0);">发现</a>
+				
+			</li>
+			<li class="icon icon5">
+				<a href="javascript:void(0);">我的</a>
+				
+			</li>
+		</ul>
+	</footer>
+	
+
+	
+	<script type="text/javascript" src="dist/idangerous.swiper.js"></script>	
+	<script type="text/javascript">
+		var dian = document.getElementById("hear_img")
+		var menu = document.getElementById("menu1")
+		var a = true;
+		dian.onclick = function(){
+		if (a)
+			 {
+			menu.style.display = "block";
+			a = false;
+			}
+		else{
+			
+			menu.style.display = "none";
+			a = true;
+		}
+	}
+		
+		
+		
+	var block_zon = document.getElementById("block_zon");
+	var startPoint = null;
+	block_zon.addEventListener("touchstart",function(e){
+		startPoint = e.touches[0];
+	},false)
+
+	block_zon.addEventListener("touchend",function(e) {
+		var endPoint = e.changedTouches[0];//最后离开屏幕点的信息
+		var deltaX = endPoint.clientX - startPoint.clientX;//起止点clientX的差值
+//		var deltaY = endPoint.clientY - startPoint.clientY;
+		var delta = 50;//只有deltaX超过了这个值，才触发事件
+		var rt = 100;
+		if(Math.abs(deltaX) > delta) {
+			if(deltaX > 0) {
+				var oLeft = block.offsetLeft;
+				alert("向右划");
+				block.style.left = oLeft+ rt +"px";
+			}else if(deltaX < 0) {
+				var oLeft = block.offsetLeft;
+				
+				alert("向左划")
+				
+				block.style.left = oLeft - rt +"px";
+			}
+		}
+
+		
+	})
+	
+	</script>
+</body>
+</html>

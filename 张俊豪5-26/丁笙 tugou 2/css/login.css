@@ -1,0 +1,96 @@
+html,body {
+	background-color: #f4f3f0;
+}
+header {
+	height: 230px;
+	border-bottom: 1px solid #dad9d6;
+	padding-top: 53px;
+	background-color: #fff;
+}
+.yuan {
+	height: 75px;
+	padding: 7.5px 0;
+	background: url(../img/yuan.png) no-repeat center 0;
+	background-size: 90px 90px;
+}
+.yuan img {
+	width: 75px;
+	margin: auto;
+}
+.loginBtn {
+	display: block;
+	width: 68px;
+	line-height: 28px;
+	border: 2px solid #c3ad88;
+	border-radius: 4px;
+	text-align: center;
+	color: #c3ad88;
+	margin: 10px auto 0;
+}
+.box {
+	width: 80%;
+	margin: 10px auto 0;
+	border-top: 1px solid #c5c4c4;
+	padding-top: 5px;
+}
+a {
+	color: black;
+}
+.content1 {
+	width: 100%;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.content1 li {
+	width: 49.8333%;
+	line-height: 30px;
+	text-align: center;
+}
+.content1 li:nth-of-type(1) {
+	border-right: 1px solid #c5c4c4;
+}
+.content2 {
+	border-top: 1px solid #c5c4c4;
+	display: flex;
+	justify-content: space-between;
+}
+.content2 li {
+	text-align: center;
+	width: 33.1111%;
+	line-height: 30px;
+	border-right: 1px solid #c5c4c4;
+	margin-top: 5px;
+}
+.content2 li:nth-of-type(3) {
+	border: 0;
+}
+.container {
+	margin-top: 5px;
+	background-color: #fff;
+}
+.whole {
+	display: block;
+	line-height: 30px;
+	border-bottom: 1px solid #c5c4c4;
+	text-indent: 15px;
+	background: url(../img/right.png) no-repeat 96%;
+	background-size: 7px 11px
+}
+.option {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+}
+.option li {
+	position: relative;
+	width: 36px;
+	height: 40px;
+	font-size: 1.2rem;
+	
+}
+.option li a {
+	position: relative;
+	top: 24px;
+}

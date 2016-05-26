@@ -1,0 +1,99 @@
+@chargset "utf-8";
+body {
+	background-color: #eee;
+}
+
+#topBar {
+	/*position: absolute;*/
+	background-color: #48382b;
+	line-height: 42px;
+	height: 42px;
+	box-shadow: 0px 2px 1px #000000;
+}
+
+#topBar h1{
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.back_btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 42px;
+	height: 42px;
+	background: url("../img/back.png") no-repeat center;
+	background-size: 10px 19px;
+}
+#mainContent {
+	margin-top: 12px;
+	background-color: #fff;
+}
+
+#mainContent dt {
+	position: relative;
+	text-indent: 38px;
+	height: 40px;
+	font-size: 1.2rem;
+	line-height: 40px;
+	border-bottom: 1px solid #e0e0e0;
+	background: url("../img/helpcenter.png") no-repeat center 0;
+	background-size: 16px 275px;
+}
+
+#mainContent dt:after {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 12px;
+	height: 20px;
+	background: url(../img/updown.png) no-repeat center 4px;
+	background-size: 12px 40px;
+}
+
+#mainContent .list-active dt:after {
+	background-position: center -21px;
+}
+
+#mainContent .list-active dd {
+	display: block;
+}
+
+#mainContent dd {
+	display: none;
+	background-color: #eee;
+	font-size: 1.2rem;
+	padding: 12px 36px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#mainContent .list1 dt {
+	background-position:15px 13px;
+}
+
+
+#mainContent .list2 dt {
+	background-position:15px -21px;
+}
+
+#mainContent .list3 dt {
+	background-position:15px -61px;
+}
+
+#mainContent .list4 dt {
+	background-position:15px -103px;
+}
+#mainContent .list1.list-active dt {
+	background-position: 15px -135px;
+}
+#mainContent .list2.list-active dt {
+	background-position: 15px -167px;
+}
+#mainContent .list3.list-active dt {
+	background-position: 15px -207px;
+}
+#mainContent .list4.list-active dt {
+	background-position: 15px -248px;
+}

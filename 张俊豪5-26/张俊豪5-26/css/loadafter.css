@@ -1,0 +1,240 @@
+body {
+	background-color: #ebeae4;
+}
+
+body,html {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 42%;
+	background: url(../img/loadbg.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	position: relative;
+	overflow: hidden;
+}
+
+#heamask{
+	width: 100%;
+	height:100%;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	overflow: hidden;
+}
+
+.tou {
+	border: 4px solid #c3ad88;
+	border-radius: 50%;
+	width: 20%;
+	margin: 7% auto 3% auto;
+}
+.tou img {
+	width: 94%;
+	height: 94%;
+	padding: 3%;
+	border-radius:50%;
+}
+
+#heamask p {
+	color: #FFFFFF;
+	font-size: 1.6rem;
+	margin-bottom: 6px;
+}
+
+/*关注条*/
+
+.guanfen {
+	border-top:1px solid #c5c4c4;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 1.4rem;
+}
+
+.guanfen li{
+	display: inline-block;
+	color: #FFFFFF;
+	padding: 1% 3%;
+	margin: 10px auto;
+}
+
+.guanfen a span {
+	padding-left: 10px;
+}
+
+#guanzhu {
+	color: #6cee04;
+}
+
+#fensi {
+	color: #ff4e00;
+}
+
+/*收藏*/
+
+.shou {
+	border-top:1px solid #c5c4c4;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 1.4rem;
+}
+
+.shou li{
+	display: inline-block;
+	color: #FFFFFF;
+	padding: 1% 3%;
+	margin: 10px auto;
+}
+
+.shou span {
+	padding-left: 5px;
+}
+
+#shoucang {
+	color: #6cee04;
+}
+
+#xiaoxi{
+	color: #b500ea
+}
+#jifen{
+	color: #e7031c;
+}
+
+/*底边*/
+#bottomBar {
+	height: 46px;
+}
+#bottomBar ul{
+	position: fixed;
+	bottom:0;
+	left:0;
+	padding-top: 5px;
+	height: 52px;
+	box-sizing:border-box;
+	width:100%;
+	background-color: #48382b;
+}
+#bottomBar li {
+	float: left;
+	width:20%;
+}
+#bottomBar li a {
+	display: block;
+	width:34px;
+	margin:0 auto;
+	text-align: center;
+	color: #c3ad88;
+}
+#bottomBar li a:before {
+	content: "";
+	display: block;
+	width:28px;
+	margin:0 auto;
+	height: 24px;
+	background:url("../img/icon_bar.png") no-repeat 0 0;
+	background-size: 320px 40px;
+}
+#bottomBar .icon.active a{
+	color:#6ab439;
+}
+#bottomBar .icon1 a:before {
+	background-position: 4px 4px;
+}
+#bottomBar .icon2 a:before {
+	background-position: -71px 4px;
+}
+
+#bottomBar .icon3 a:before {
+	background-position: -146px 4px;
+}
+#bottomBar .icon4 a:before {
+	background-position: -222px 4px;
+}
+#bottomBar .icon5 a:before {
+	background-position: -296px -20px;
+}
+
+#fabu {
+	position: fixed;
+	bottom:86px;
+	right:20px;
+	width:50px;
+	height: 50px;
+	border-radius: 25px;
+	background: rgba(0,0,0,0.5);
+	font-size: 3rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+#fabu a {
+	color: #FFFFFF;
+}
+
+/*主体部分*/
+
+#mainContent {
+	margin-top: 12px;
+	background-color: #fff;
+}
+
+#mainContent dt {
+	position: relative;
+	text-indent: 38px;
+	height: 35px;
+	font-size: 1.2rem;
+	line-height: 40px;
+	border-bottom: 1px solid #e0e0e0;
+	background: url("../img/list.png") no-repeat center 0 ;
+	background-size: 18px 180px ;
+}
+
+#mainContent dt:after {
+	content: "";
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	width: 12px;
+	height: 20px;
+	background: url(../img/rightdown.png) no-repeat center 4px;
+	background-size: 12px 40px;
+}
+
+#mainContent .list-active dt:after {
+	background-position: center -21px;
+}
+
+#mainContent .list-active dd {
+	display: block;
+}
+
+#mainContent dd {
+	display: none;
+	background-color: #eee;
+	font-size: 1.2rem;
+	padding: 12px 36px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#mainContent .list1 dt {
+	background-position:15px 10px;
+}
+
+
+#mainContent .list2 dt {
+	background-position:15px -26px;
+}
+
+#mainContent .list3 dt {
+	background-position:15px -62px;
+}
+
+#mainContent .list4 dt {
+	background-position:15px -97px;
+}
+#mainContent .list5 dt {
+	background-position:15px -135px;
+}
